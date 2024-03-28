@@ -1,35 +1,42 @@
-# IOT-Assigment
-
 # Cloud-Based IoT System with Virtual Sensors
 
 ## Introduction
-This repository contains the code for a cloud-based Internet of Things (IoT) system designed to collect environmental data from virtual sensors. The system utilizes the MQTT protocol for communication and integrates with the Thingspeak platform for data storage and visualization.
+This repository hosts code for a cloud-based Internet of Things (IoT) system tailored for collecting environmental data from virtual sensors. The system leverages MQTT protocol for communication and seamlessly integrates with the Thingspeak platform for data storage and visualization.
 
-## Features
+## Key Features
 - Collects environmental data (temperature, humidity, CO2) from virtual sensors.
-- Communicates with the Thingspeak platform via MQTT for data upload.
-- Provides real-time monitoring and visualization of environmental data.
-- Suitable for deployment on MicroPython-enabled devices.
+- Communicates with Thingspeak via MQTT for efficient data upload.
+- Real-time monitoring and visualization of environmental data.
+- Designed for deployment on MicroPython-enabled devices.
+
+## Setup Instructions
+
+### 1. Create Accounts:
+   - Sign up for accounts on Wokwi and ThingSpeak platforms.
+
+### 2. Configure ThingSpeak:
+   - Upon logging into ThingSpeak, create a new channel with fields for temperature, humidity, and CO2 levels.
+   - Add a new device on ThingSpeak and link it with the created channel.
 
 ## Getting Started
-To use this IoT system, follow these steps:
 
-1. **Clone the Repository:**
+### 1. Clone the Repository:
    ```bash
-   git clone https://github.com/yourusername/iot-system.git
-   cd iot-system
-## Configuration
+   git clone https://github.com/Kenni001/IOT-Assigment.git
+   cd IOT-Assigment
+   ```
 
-1. Modify the `config.py` file to customize MQTT broker details, Thingspeak credentials, and Wi-Fi settings.
-2. Ensure the MicroPython environment is set up properly on your device.
+### 2. Configuration:
+   - Customize MQTT broker details, ThingSpeak credentials, and Wi-Fi settings in the `main.py` file.
+   - Ensure MicroPython environment is properly set up on your device.
 
-## Deploy the Code
+### 3. Deploy the Code:
+   - Upload the Python scripts (`main.py`) to your MicroPython-enabled device.
 
-1. Upload the Python scripts (`main.py`, `config.py`) to your MicroPython-enabled device.
+## Running the Code
 
-## Run the Code
-
-1. Execute the `main.py` script on your MicroPython device to start collecting and uploading sensor data.
+### 1. Execution:
+   - Run the `main.py` script on your MicroPython device to commence collecting and uploading sensor data.
 
 ## Dependencies
 
@@ -40,5 +47,5 @@ To use this IoT system, follow these steps:
 ## Usage
 
 1. Ensure the MicroPython device is connected to the internet via Wi-Fi.
-2. The device will continuously collect sensor data and upload it to Thingspeak at regular intervals.
-3. Access the Thingspeak platform to visualize and analyze the collected data.
+2. The device will continuously collect sensor data and upload it to ThingSpeak at regular intervals.
+3. Access the ThingSpeak platform to visualize and analyze the collected data.
